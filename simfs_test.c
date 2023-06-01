@@ -264,7 +264,8 @@ void test_directory_make()
 
     struct directory *dir;
     struct directory_entry ent;
-
+    
+    mkfs();
     dir = directory_open(0);
     directory_get(dir, &ent);
     directory_get(dir, &ent);
